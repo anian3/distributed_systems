@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Air Quality</title>
+</head>
+<body>
+    <h1>Compare air quality in two countries</h1>
+    <form action="/submit" method="post">
+        <label for="first_country">First country: </label>
+        <input type="text" id="first_country" name="first_country">
+        <br>
+        <label for="second_country">Second country: </label>
+        <input type="text" id="second_country" name="second_country">
+        <br>
+        <label for="pollutant">Choose pollutant: </label>
+        <select id="pollutant" name="pollutant">
+            <option value="pm25">PM2.5</option>
+            <option value="pm10">PM10</option>
+            <option value="o3">O3</option>
+            <option value="no2">NO2</option>
+            <option value="so2">SO2</option>
+            <option value="co">CO</option>
+        </select>
+        <br>
+        <label for="start_date">Date from </label>
+        <input type="date" id="start_date" name="start_date">
+        <br>
+        <label for="end_date">Date to </label>
+        <input type="date" id="end_date" name="end_date">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
